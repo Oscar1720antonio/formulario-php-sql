@@ -18,13 +18,7 @@
 		<div class="collapse navbar-collapse" id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="index.php">Productos <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Ventas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Empleados</a>
+				<a class="nav-link" href="index.php">Empleados <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link danger" href="#">Cerrar sesion</a>
@@ -38,8 +32,7 @@
 		<div class="row">
 			<div class="col-md-12">
 			<div class="jumbotron">
-				<h1 class="display-3">Productos</h1>
-				<p class="lead">Descripcion.</p>
+				<h1 class="display-3">Empleados</h1>
 				</div>
 			</div>
 		</div>
@@ -54,33 +47,36 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<td>ID PRODUCTO</td>
+							<td>ID EMPLEADO</td>
 							<td>NOMBRE</td>
-							<td>DESCRIPCION</td>
-							<td>PRECIO COMPRA</td>
-							<td>PRECIO VENTA</td>
-							<td>FECHA REGISTRO</td>
+							<td>PUESTO LABORAL</td>
+							<td>NOMBRE DE VACUNA</td>
+							<td>FECHA PRIMERA DOSIS</td>
+							<td>FECHA SEGUNDA DOSIS</td>
+							<td>ESTADO DE VACUNACION</td>
 							<td>OPCIONES</td>
 						</tr>
 					</thead>
 					<tbody>
 						<?php
 							include "../CONEXION/conection.php";
-							$sql = "SELECT * FROM productos";
+							$sql = "SELECT * FROM empleado";
 							$result = $conn->query($sql);
 							    // output data of each row
 							    while($row = $result->fetch_assoc()) {
 							        ?>
 							        	<tr scope="row" class="table-dark">
 							        		<td> <?php echo $row["id"] ?> </td>
-							        		<td> <?php echo $row["nombre_producto"] ?> </td>
-							        		<td> <?php echo $row["descripcion"] ?> </td>
-							        		<td> <?php echo $row["precio_compra"] ?> </td>
-							        		<td> <?php echo $row["precio_venta"] ?> </td>
-							        		<td> <?php echo $row["created_at"] ?> </td>
+							        		<td> <?php echo $row["nombre"] ?> </td>
+							        		<td> <?php echo $row["puesto"] ?> </td>
+							        		<td> <?php echo $row["vacuna"] ?> </td>
+							        		<td> <?php echo $row["pri_dosis"] ?> </td>
+							        		<td> <?php echo $row["seg_dosis"] ?> </td>
+											<td> <?php echo $row["estado"] ?>  </td>
+											 
 							        		<td>
-							        			<a href="actualizarProductoVista.php?id=<?php echo $row["id"]; ?>" class="btn btn-warning">EDITAR</a>
-							        			<a href="eliminarProductoControlador.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">ELIMINAR</a>
+							        			<a href="actualizarEmpleadoVista.php?id=<?php echo $row["id"]; ?>" class="btn btn-warning">EDITAR</a>
+							        			<a href="eliminarEmpleadoControlador.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">ELIMINAR</a>
 							        		</td>
 							        	</tr>
 							        <?php
@@ -100,7 +96,7 @@
 	<div class="row">
 		<div class="col-md-6"></div>
 		<div class="col-md-6">
-			<a href="crearProductoVista.php" class="btn btn-outline-success col-md-12">Agregar Nuevo producto</a>
+			<a href="crearEmpleadoVista.php" class="btn btn-outline-success col-md-12">Registrar nuevo empleado</a>
 		</div>
 	</div>
 	</div>

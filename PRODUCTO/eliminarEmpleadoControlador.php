@@ -2,7 +2,7 @@
 
 include "../CONEXION/conection.php";
 // sql to delete a record
-$sql = "DELETE FROM empleados WHERE id=".$_GET["id"];
+$sql = "DELETE FROM empleado WHERE id=".$_GET["id"];
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");

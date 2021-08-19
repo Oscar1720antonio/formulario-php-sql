@@ -10,7 +10,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<a class="navbar-brand" href="#">Navbar</a>
+	<a class="navbar-brand" href="#">MENU</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -18,14 +18,7 @@
 	<div class="collapse navbar-collapse" id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-			<a class="nav-link" href="PRODUCTO/index.php">Productos</a>
-		
-			<li class="nav-item">
-				<a class="nav-link" href="VENTAS/index.php">Ventas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="EMPLEADOS/index.php">Empleados</a>
-			</li>
+			<a class="nav-link" href="PRODUCTO/index.php">Empleados</a>
 			<li class="nav-item">
 				<a class="nav-link danger" href="#">Cerrar sesion</a>
 			</li>
@@ -39,10 +32,10 @@
 		<div class="row">
 			<div class="col-md-12">
 			<div class="jumbotron">
-				<h1 class="display-3">Formulario Registro</h1>
-				<p class="lead">SISTEMA DE INVENTARIADO                   OSCAR ANTONIO LOPEZ ACAJABON   5390-16-3771</p>
+				<h1 class="display-3">Registro de Empleados</h1>
+				<p class="lead">Sistema de registro de empleados vacunados contra covid-19</p>
 				<hr class="my-4">
-				<p>HOLA  ESTE PROGRAMA FUNCIONA SOLO PARA PURA BELLEZA</p>
+				<p>OSCAR ANTONIO LOPEZ ACAJABON</p>
 				<p class="lead">
 					<a class="btn btn-primary btn-lg" href="informacion.php" role="button">Learn more</a>
 				</p>

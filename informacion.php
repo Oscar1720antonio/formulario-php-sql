@@ -17,14 +17,7 @@
 	<div class="collapse navbar-collapse" id="navbarColor02">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-			<a class="nav-link" href="PRODUCTO/index.php">Productos</a>
-		
-			<li class="nav-item">
-				<a class="nav-link" href="VENTAS/index.php">Ventas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="EMPLEADOS/index.php">Empleados</a>
-			</li>
+			<a class="nav-link" href="PRODUCTO/index.php">Empleados</a>
 			<li class="nav-item">
 				<a class="nav-link danger" href="#">Cerrar sesion</a>
 			</li>
@@ -33,16 +26,10 @@
 		
 	</div>
 	</nav>
-
-
-
-
-
-
-<h1 class="display-5">FERRETERIA </h1>
-				<p class="lead">SISTEMA DE INVENTARIADO                   OSCAR ANTONIO LOPEZ ACAJABON   5390-16-3771</p>
+<h1 class="display-5">REGISTRO DE EMPLEADOS</h1>
+				<p class="lead">OSCAR ANTONIO LOPEZ ACAJABON</p>
 				<hr class="my-4">
-				<p>HOLA  BIENVENIDO A MI PROGRAMA HECHO A PURO CODIGUITO ESPERO TE GUSTE ME ESFORCE MUCHO TIENE TODO LO QUE NECESITAS A UN PRECION ACCESIBLE 20 PUNTOS.</p>
+				<p>Hola espero te encuentres bien esto es una prueba para trabajar como programador espero te guste.</p>
 				<p class="lead">
 
 </body>
