@@ -49,13 +49,13 @@
                         <div class="col-6 col-lg-6 col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Nombre</label>
-                                <input type="text" class="form-control" id="" name="nombre" value="">
+                                <input type="text" class="form-control" required  id="" name="nombre" value="">
                             </div>
                         </div>
                         <div class="col-6 col-lg-6 col-md-6 col-sm-6">
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Puesto laboral</label>
-                                <input type="text" class="form-control" id="puesto" name="puesto" value="">
+                                <input type="text" class="form-control" required id="puesto" name="puesto" value="">
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                             <div class="form-group">
                             <label for="exampleInputEmail1">Vacuna</label>
                             <select  id="vacuna" name = "vacuna"   class="form-control">
-                                <option selected>Vacuna</option>
+                                <option value="" selected>Vacuna</option>
                                 <option value="Sinopharm">Sinopharm</option>
                                 <option value="AstraZeneca">AstraZeneca</option>
                                 <option value="Sputnik V">Sputnik V</option>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-6 col-lg-6 col-md-6 col-sm-6">
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Fecha Primer Dosis</label>
+                                <label for="exampleInputPassword1">Fecha Vacunacion</label>
                                 <input type="date" class="form-control" id="pri_dosis" name="pri_dosis" value="">
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Dosis</label>
                                 <select  id="estado" name = "estado"   class="form-control">
-                                <option selected>Dosis</option>
+                                <option value="En Riesgo" selected>Dosis</option>
                                 <option value="En Progreso">Primera</option>
                                 <option value="Protegido">Segunda</option>
                                 <option value="En Riesgo">Ninguna</option>
