@@ -23,3 +23,8 @@ Por cuestiones de hosting use una base de datos mysql
 
 https://formulario-php.herokuapp.com/
 
+Para ingresar nuevos empleado dirigirse a apartado de empleados en la parte superior del navbar:
+
+Alli aparecera la tabla.
+Pueden agregar en el boton de Registrar nuevo empleado.
+
